@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="it" data-prezzo="si">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Filler labbra a Roma · Metodo LA VISION · MedX Clinic</title>
+<meta name="description" content="Filler labbra a Roma con il metodo LA VISION del dott. Andrea Armenti: si parte da proporzioni, profilo e sorriso.">
+<link rel="icon" href="img/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Inter+Tight:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* MedX · pagina labbra v8 (direzione visiva del 10 ottobre 2026).
+   Verde profondo, bianco, salvia; sans netta, due pesi; foto grandi. */
+:root{
+  --verde:#073E36; --verde2:#0B5246; --bianco:#FFFFFF; --salvia:#F0F4F0; --accento:#DCEBA4;
+  --testo:#13201D; --tenue:#56635F; --riga:rgba(7,62,54,.14);
+  --font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --titoli:"Inter Tight","Inter",system-ui,sans-serif;
+  --g:22px; --max:1200px; --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--bianco)}
+body{font-family:var(--font);font-weight:400;color:var(--testo);background:var(--bianco);font-size:17px;line-height:1.55;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+b,strong{font-weight:600}
+a{color:var(--verde)}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--verde);outline-offset:3px}
+.w{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
+html[data-prezzo="no"] .solo-prezzo,html[data-prezzo="si"] .solo-senza{display:none!important}
+
+/* tipografia */
+.kicker{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);margin-bottom:16px}
+h1,h2,h3,.citaz,.domanda,.numeri .n,.zero .n,.dato .n,.medico .prezzo .n,.ricevi .t,.dubbi summary{font-family:var(--titoli)}
+h1,h2,h3{font-weight:400;letter-spacing:-.025em;line-height:1.04;color:var(--verde)}
+h1{font-size:clamp(38px,10vw,68px);max-width:12em}
+h2{font-size:clamp(34px,8.6vw,56px);margin-bottom:18px}
+h3{font-size:clamp(22px,5.4vw,28px);line-height:1.15;letter-spacing:-.015em;margin-bottom:8px}
+.lead{font-size:clamp(18px,4.6vw,21px);line-height:1.45;color:var(--tenue);max-width:34em}
+.verde .kicker,.verde h2,.verde h3{color:var(--accento)}
+.verde h2{color:#fff}
+.verde{background:var(--verde);color:rgba(255,255,255,.88)}
+.verde a{color:var(--accento)}
+.salvia{background:var(--salvia)}
+section{padding:72px 0}
+.nota{font-size:13.5px;line-height:1.45;color:var(--tenue)}
+.verde .nota{color:rgba(255,255,255,.66)}
+
+/* testata */
+.testata{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--riga)}
+.testata .w{height:58px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.testata img{height:20px;width:auto}
+.testata span{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--verde)}
+
+/* bottoni */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:10px;background:var(--verde);color:#fff;font-weight:600;font-size:17px;text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .15s}
+.btn:hover{background:var(--verde2)}.btn:active{transform:scale(.985)}
+.verde .btn{background:var(--accento);color:var(--verde)}
+.btn.pieno-l{width:100%}
+
+/* 01 apertura */
+.apertura{padding:28px 0 0}
+.apertura-grid{display:grid;gap:26px}
+.apertura h1{margin-bottom:20px}
+.apertura .lead{margin-bottom:26px}
+.apertura .btn{width:100%}
+.apertura .chi{margin-top:16px;font-size:15px;color:var(--tenue)}
+.ritratto{position:relative;margin:0;background:#eef0ee;overflow:hidden;border-radius:var(--r);display:grid;grid-template-columns:42% 1fr}
+.ritratto img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%}
+.ritratto figcaption{display:flex;flex-direction:column;justify-content:flex-end;padding:16px;background:var(--verde);color:#fff}
+.ritratto figcaption b{display:block;font-size:20px;font-weight:600;letter-spacing:-.01em}
+.ritratto figcaption span{font-size:13.5px;color:var(--accento)}
+.tre-prove{display:grid;grid-template-columns:1fr;border-top:1px solid var(--riga);margin-top:18px}
+.tre-prove a{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:14px 0;border-bottom:1px solid var(--riga);text-decoration:none;color:var(--testo)}
+.tre-prove b{font-family:var(--titoli);font-size:19px;font-weight:600;color:var(--verde);letter-spacing:-.01em}
+.tre-prove span{grid-column:1;font-size:15px;color:var(--tenue);line-height:1.4}
+.tre-prove a::after{content:"↓";grid-row:1/3;grid-column:2;align-self:center;color:var(--verde);font-size:18px}
+
+/* 02 colleghi */
+.colleghi-foto{margin:26px calc(var(--g)*-1) 0}
+.colleghi-foto img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.colleghi-foto figcaption{padding:10px var(--g) 0}
+.colleghi-video{display:grid;gap:18px;margin-top:30px}
+.dato{display:flex;align-items:baseline;gap:12px}
+.dato .n{font-size:64px;line-height:1;letter-spacing:-.04em;color:var(--accento)}
+.dato .l{font-size:17px;line-height:1.3;color:#fff}
+.citaz{font-size:clamp(22px,5.6vw,30px);line-height:1.25;letter-spacing:-.015em;color:#fff;margin:14px 0 8px}
+
+/* video */
+.video{position:relative;border-radius:var(--r);overflow:hidden;background:#0d2a25}
+.video video{width:100%;height:auto;aspect-ratio:var(--ar,4/5);object-fit:cover;background:#0d2a25}
+.video .play{position:absolute;inset:0;display:flex;align-items:flex-end;gap:12px;padding:16px;border:0;background:linear-gradient(0deg,rgba(7,30,26,.82) 0%,rgba(7,30,26,.35) 32%,rgba(0,0,0,0) 55%);color:#fff;cursor:pointer;text-align:left;font-weight:600;font-size:15px;line-height:1.25}
+.video .play::before{content:"";flex:0 0 54px;height:54px;border-radius:50%;background:var(--accento) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='%23073E36'/%3E%3C/svg%3E") center/24px no-repeat}
+.video .play small{display:block;font-weight:400;font-size:12.5px;opacity:.75;margin-top:3px}
+.video.va .play{display:none}
+video::cue{font-family:var(--font);font-size:15px;background:rgba(0,0,0,.66);color:#fff}
+
+/* 03 risultati */
+.confronto{--x:50%;position:relative;overflow:hidden;border-radius:var(--r);background:#ddd;aspect-ratio:16/10;user-select:none;-webkit-user-select:none;touch-action:pan-y}
+.confronto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.confronto .dopo{clip-path:inset(0 0 0 var(--x))}
+.confronto .linea{position:absolute;top:0;bottom:0;left:var(--x);width:2px;margin-left:-1px;background:#fff;pointer-events:none}
+.confronto .linea::after{content:"‹ ›";position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#fff;color:var(--verde);font:600 17px/42px var(--font);text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.confronto input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;touch-action:pan-y}
+.confronto .data{position:absolute;bottom:10px;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.94);font-size:12px;font-weight:600;color:var(--verde);pointer-events:none}
+.confronto .data.p{left:10px}.confronto .data.d{right:10px}
+.caso{margin-top:34px}
+.caso .vista{display:flex;gap:6px;margin-bottom:10px}
+.caso .vista button{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--riga);background:#fff;font-size:14px;font-weight:600;color:var(--tenue);cursor:pointer}
+.caso .vista button[aria-pressed="true"]{background:var(--verde);border-color:var(--verde);color:#fff}
+.caso .quando{margin-top:10px;font-size:15px}
+.caso .quando b{color:var(--verde)}
+.casi-griglia{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.casi-griglia .confronto .linea::after{width:32px;height:32px;margin:-16px 0 0 -16px;font-size:13px;line-height:30px}
+.casi-griglia .confronto .data,.casi-griglia .quando{font-size:12.5px}
+.casi-griglia .quando{font-size:13px;color:var(--tenue);margin-top:6px}
+.caso.grande{margin-top:26px}
+.sfoglia{margin-top:30px}
+.sfoglia-titolo{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);margin-bottom:10px}
+.sfoglia-pista{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:12px}
+.sfoglia-pista::-webkit-scrollbar{display:none}
+.sfoglia-pista .caso{flex:0 0 100%;scroll-snap-align:start;margin:0}
+.sfoglia-pista .quando{font-size:14px;color:var(--tenue);margin-top:8px}
+.sfoglia-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:10px}
+.sfoglia-nav button{width:48px;height:48px;border-radius:50%;border:1px solid var(--verde);background:#fff;color:var(--verde);font-size:26px;line-height:1;cursor:pointer}
+.sfoglia-nav button:disabled{opacity:.3;cursor:default}
+.sfoglia-pos{min-width:64px;text-align:center;font-weight:600;font-size:14px;color:var(--verde)}
+.sotto-casi{margin-top:34px;font-size:clamp(20px,5vw,24px)}
+
+.casi-due .caso{margin-top:0}
+.altri summary{margin-top:28px;display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:999px;border:1px solid var(--verde);color:var(--verde);font-weight:600;font-size:15px;cursor:pointer;list-style:none}
+.altri summary::-webkit-details-marker{display:none}
+.altri[open] summary{margin-bottom:6px}
+.altri-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.altri-grid figure img{width:100%;height:auto;border-radius:10px}
+.altri-grid figcaption{font-size:12.5px;color:var(--tenue);margin-top:4px}
+.voci{display:grid;gap:30px;margin-top:56px;padding-top:44px;border-top:1px solid var(--riga)}
+.voce .citaz{color:var(--verde);margin-top:16px}
+.voce .chi{font-size:14px;color:var(--tenue)}
+
+/* 04 metodo */
+.metodo-grid{display:grid;gap:30px;margin-top:10px}
+.passi{list-style:none;counter-reset:p}
+.passi li{counter-increment:p;display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:20px 0;border-top:1px solid var(--riga)}
+.passi li::before{content:"0" counter(p);grid-row:span 2;font-size:28px;line-height:1;letter-spacing:-.03em;color:var(--verde)}
+.passi b{font-size:21px;font-weight:600;color:var(--verde);letter-spacing:-.01em}
+.passi span{color:var(--tenue);font-size:16px}
+.domanda{font-size:clamp(26px,6.8vw,40px);line-height:1.15;letter-spacing:-.02em;color:var(--verde);margin-top:40px}
+.domanda+.nota{margin-top:10px}
+
+/* 05 studio */
+.studio-grid{display:grid;gap:22px;margin-top:6px}
+.frontespizio{display:block;border:1px solid var(--riga);border-radius:var(--r);overflow:hidden;background:#fff;text-decoration:none;color:var(--testo)}
+.frontespizio img{width:100%;height:auto;border-bottom:1px solid var(--riga)}
+.frontespizio span{display:block;padding:14px 16px;font-size:14.5px;line-height:1.4}
+.frontespizio span b{color:var(--verde)}
+.numeri{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.numeri div{border-top:2px solid var(--verde);padding-top:10px}
+.numeri .n{display:block;font-size:clamp(48px,13vw,72px);line-height:1;letter-spacing:-.04em;color:var(--verde)}
+.numeri .l{font-size:15px;color:var(--tenue)}
+.zero{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:18px;margin-top:26px;padding:22px 20px;border-radius:var(--r);background:var(--verde);color:#fff}
+.zero .n{font-size:80px;line-height:.9;letter-spacing:-.05em;color:var(--accento)}
+.zero b{display:block;font-size:20px;font-weight:600;line-height:1.25}
+.zero span{font-size:14.5px;color:rgba(255,255,255,.8)}
+.contesto{margin-top:12px}
+
+/* 06 face for life */
+.ffl-grid{display:grid;gap:24px;align-items:center}
+.ffl-grid .video-con-frase{max-width:360px}
+.citaz.scura{color:var(--verde)}
+.citaz.piccola{font-size:19px}
+.chi-video{font-size:14px;color:var(--tenue)}
+#gia-fatto{border-top:1px solid var(--riga)}
+
+/* 07 medici */
+.medici-grid{display:grid;gap:26px;margin-top:10px}
+.coppia{margin:0 calc(var(--g)*-1)}
+.coppia img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;object-position:50% 20%;background:#f2f2f2}
+.medico{padding:22px 0;border-top:1px solid var(--riga)}
+.medico .ruolo{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue);margin-bottom:6px}
+.medico h3{font-size:clamp(28px,7vw,36px);margin-bottom:6px}
+.medico p{color:var(--tenue);font-size:16px}
+.medico .prezzo{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:14px}
+.medico .prezzo .n{white-space:nowrap}
+.medico .prezzo .n{font-size:48px;line-height:1;letter-spacing:-.04em;color:var(--verde)}
+.medico .prezzo span{font-size:11.5px;line-height:1.35;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue)}
+.medico.armenti{border-top:2px solid var(--verde)}
+.medico.nardi h3{font-size:clamp(24px,6vw,30px)}
+.nardi-foto{display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px}
+.nardi-foto img{width:100%;height:auto;border-radius:10px}
+.prx{margin-top:8px;font-size:15px;color:var(--testo)}
+.clinica{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:44px}
+.clinica img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+.compreso{margin-top:6px;padding:20px;border-radius:var(--r);background:var(--salvia)}
+.compreso ul{list-style:none;margin-top:8px}
+.compreso li{position:relative;padding:8px 0 8px 26px;font-size:16px}
+.compreso li::before{content:"";position:absolute;left:2px;top:15px;width:12px;height:12px;border-radius:50%;background:var(--verde)}
+.compreso li.no::before{background:#fff;border:2px solid var(--verde)}
+.percorso{list-style:none;counter-reset:q;margin-top:22px}
+.percorso li{counter-increment:q;position:relative;padding:14px 0 14px 44px;border-top:1px solid var(--riga);font-size:16px}
+.percorso li::before{content:counter(q);position:absolute;left:0;top:14px;width:30px;height:30px;border-radius:50%;background:var(--verde);color:#fff;font-weight:600;font-size:14px;line-height:30px;text-align:center}
+.percorso b{display:block;color:var(--verde)}
+.percorso em{font-style:normal;font-weight:600;color:var(--verde)}
+
+/* 08 dubbi */
+.dubbi{margin-top:14px;border-top:1px solid var(--riga)}
+.dubbi details{border-bottom:1px solid var(--riga)}
+.dubbi summary{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;list-style:none;cursor:pointer;font-size:clamp(19px,4.8vw,23px);letter-spacing:-.01em;color:var(--verde)}
+.dubbi summary::-webkit-details-marker{display:none}
+.dubbi summary::after{content:"+";flex:0 0 auto;font-size:28px;line-height:1;font-weight:400;transition:transform .2s}
+.dubbi details[open] summary::after{transform:rotate(45deg)}
+.dubbi .r{padding:0 0 22px}
+.dubbi .r p+p,.dubbi .r .video{margin-top:12px}
+.dubbi .r .video{max-width:320px}
+.gia-fatto{margin-top:26px;padding:20px;border-radius:var(--r);border:1px solid var(--verde)}
+.gia-fatto .kicker{margin-bottom:8px}
+
+/* 09 contatto */
+.contatto-grid{display:grid;gap:26px}
+.ricevi{padding:22px 20px;border-radius:var(--r);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18)}
+.ricevi .t{font-size:28px;line-height:1.1;letter-spacing:-.02em;color:#fff;margin:6px 0 14px}
+.ricevi ol{list-style:none}
+.ricevi li{padding:10px 0;border-top:1px solid rgba(255,255,255,.18);font-size:15.5px;color:#fff}
+.ricevi li span{color:var(--accento);font-weight:600;margin-right:8px}
+.ricevi a{font-size:14px}
+#modulo a{color:var(--verde)}
+form{background:#fff;color:var(--testo);border-radius:var(--r);padding:22px 18px}
+.campo{margin-bottom:14px;border:0}
+.campo label,.campo legend{display:block;font-size:14px;font-weight:600;margin-bottom:6px;color:var(--verde)}
+.campo label small{font-weight:400;color:var(--tenue)}
+.campo input[type=text],.campo input[type=email],.campo input[type=tel]{width:100%;height:54px;border-radius:10px;border:1px solid rgba(7,62,54,.28);padding:0 14px;font-size:17px;background:#fff}
+.campo input:focus{outline:none;border-color:var(--verde);box-shadow:0 0 0 3px rgba(7,62,54,.12)}
+.scelte{display:flex;flex-wrap:wrap;gap:8px}
+.scelte label{margin:0;font-weight:400}
+.scelte input{position:absolute;opacity:0;width:1px;height:1px}
+.scelte span{display:inline-block;padding:11px 15px;border-radius:999px;border:1px solid rgba(7,62,54,.28);cursor:pointer;font-size:15px;color:var(--testo)}
+.scelte input:checked+span{background:var(--verde);border-color:var(--verde);color:#fff}
+.scelte input:focus-visible+span{outline:2px solid var(--verde);outline-offset:2px}
+.spunta{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.45;color:var(--tenue);margin:6px 0 4px;cursor:pointer}
+.spunta input{flex:0 0 20px;width:20px;height:20px;margin-top:1px;accent-color:var(--verde)}
+.err{color:#9c2f1f;font-size:13.5px;margin-top:4px}
+form .btn{width:100%;margin-top:14px;background:var(--verde);color:#fff}
+.sotto{font-size:13.5px;color:var(--tenue);margin-top:10px;text-align:center}
+.grazie{background:#fff;color:var(--testo);border-radius:var(--r);padding:26px 20px}
+.grazie h3{color:var(--verde)}
+.wa{display:block;margin-top:18px;text-align:center;font-size:15px}
+
+/* piede */
+.piede{padding:36px 0 calc(110px + env(safe-area-inset-bottom));font-size:13px;line-height:1.6;color:var(--tenue);border-top:1px solid var(--riga)}
+.piede img{height:18px;width:auto;margin-bottom:12px}
+.piede p+p{margin-top:6px}
+
+/* bottone fisso */
+.fisso{position:fixed;left:0;right:0;bottom:0;z-index:25;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--riga);transform:translateY(110%);transition:transform .3s}
+.fisso.su{transform:none}
+.fisso .btn{width:100%;max-width:520px;margin:0 auto;display:flex}
+
+/* anteprima */
+.prova{position:fixed;bottom:86px;left:8px;z-index:40;display:flex;gap:4px;padding:4px;border-radius:999px;background:rgba(19,32,29,.9);box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.prova button{border:0;border-radius:999px;padding:7px 11px;background:transparent;color:#fff;font-size:12px;font-weight:600;cursor:pointer}
+.prova button[aria-pressed="true"]{background:var(--accento);color:var(--verde)}
+
+/* desktop */
+@media (min-width:860px){
+  section{padding:110px 0}
+  .apertura{padding:48px 0 0}
+  .apertura-grid{grid-template-columns:1.4fr .6fr;align-items:center;gap:56px}
+  .apertura .btn{width:auto}
+  .ritratto{grid-template-columns:1fr;max-width:400px;justify-self:end}
+  .ritratto img{height:auto}
+  .colleghi-wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:end}
+  .colleghi-foto{margin:0}.colleghi-foto img{border-radius:var(--r);aspect-ratio:4/3;max-height:520px;object-position:50% 35%}
+  .colleghi-wrap{align-items:start;margin-top:30px}.colleghi-foto figcaption{padding:10px 0 0}
+  .colleghi-video{margin-top:0}
+  .sfoglia{max-width:820px}
+  .casi-griglia{grid-template-columns:repeat(4,1fr)}
+  .nardi-foto{grid-template-columns:1fr 1fr}
+  .medici-grid{grid-template-columns:.8fr 1.2fr}
+  .caso.grande{max-width:820px}
+  .voci{grid-template-columns:1fr 1fr;gap:48px}
+  .altri-grid{grid-template-columns:repeat(4,1fr)}
+  .metodo-grid{grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+  .studio-grid{grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .ffl-grid{grid-template-columns:1.2fr 1fr;gap:64px}
+  .medici-grid{grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .coppia{margin:0}.coppia img{border-radius:var(--r)}
+  .contatto-grid{grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .dubbi-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
+  .fisso{display:none}
+  .tre-prove{grid-template-columns:repeat(3,1fr);gap:0 28px;border-top:0}
+  .tre-prove a{border-top:2px solid var(--verde);border-bottom:0}
+  [data-caso]{max-width:820px}
+  .voce .video{max-width:400px}
+}
+</style>
+<style>
+.consenso{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:#fff;color:#1d2a27;border:1px solid #d9e2df;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.14);padding:14px 16px;max-width:560px;margin:0 auto;font-size:14px;line-height:1.45}
+.consenso p{margin:0 0 10px}.consenso a{color:#073E36}
+.consenso-bott{display:flex;gap:8px}.consenso-bott button{flex:1;padding:10px;border-radius:10px;border:1px solid #073E36;background:#fff;color:#073E36;font:600 14px/1 inherit;cursor:pointer}
+.consenso-bott button[data-c="si"]{background:#073E36;color:#fff}
+</style>
+<script>
+/* Versione con / senza prezzo: un giorno sì e uno no (ora di Roma), dal 14 ottobre 2026.
+   Il link può forzarla con ?prezzo=si|no. Chi è già passata rivede la stessa per 30 giorni. */
+(function(){var H=document.documentElement,q=new URLSearchParams(location.search),v=q.get('prezzo'),K='mx-labbra-versione';
+if(v!=='si'&&v!=='no'){try{var r=JSON.parse(localStorage.getItem(K)||'null');if(r&&Date.now()-r.t<30*864e5)v=r.v}catch(e){}}
+if(v!=='si'&&v!=='no'){var oggi=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Rome'}));oggi.setHours(12,0,0,0);
+var g=Math.round((oggi-new Date(2026,9,14,12))/864e5);v=((g%2)+2)%2===0?'si':'no'}
+try{localStorage.setItem(K,JSON.stringify({v:v,t:Date.now()}))}catch(e){}H.dataset.prezzo=v})();
+</script>
+</head>
+<body>
+
+<header class="testata">
+  <div class="w">
+    <img src="img/assets/logo-medx-scuro.png" alt="MedX Clinic" width="160" height="20">
+    <span>Roma · Corso Francia 221</span>
+  </div>
+</header>
+
+<main>
+
+<!-- 01 · apertura -->
+<section class="apertura">
+  <div class="w apertura-grid">
+    <div>
+      <p class="kicker">Filler labbra · Metodo LA VISION</p>
+      <h1>La forma delle tue labbra, prima della quantità.</h1>
+      <p class="lead">Vuoi labbra più definite, ma hai paura che si veda che sono rifatte? Qui si parte dalle proporzioni, dal profilo e dal sorriso. La quantità non ha importanza: conta la tecnica, caso per caso.</p>
+      <a class="btn" href="#contatto" data-cta="apertura">Scopri medici e disponibilità</a>
+      <p class="chi">Con il dott. Andrea Armenti, autore del metodo LA VISION, che lo insegna ad altri medici dal 2018.</p>
+    </div>
+    <figure class="ritratto">
+      <img src="img/nuove/armenti-hero.jpg" alt="Il dott. Andrea Armenti" width="1040" height="1300" fetchpriority="high">
+      <figcaption><b>Dott. Andrea Armenti</b><span>Chirurgo plastico · Autore del metodo LA VISION</span></figcaption>
+    </figure>
+  </div>
+  <div class="w">
+    <nav class="tre-prove" aria-label="Perché qui">
+      <a href="#metodo"><b>Cosa osserva</b><span>Profilo, bordo e sorriso: la tecnica si sceglie caso per caso.</span></a>
+      <a href="#studio"><b>Un metodo pubblicato</b><span>Su Aesthetic Plastic Surgery, 2026: 400 persone.</span></a>
+      <a href="#colleghi"><b>Lo insegna ai medici</b><span>Chirurghi e medici vengono a imparare da lui.</span></a>
+    </nav>
+  </div>
+</section>
+
+<!-- 02 · i colleghi -->
+<section class="verde" id="colleghi">
+  <div class="w">
+    <p class="kicker">La scelta dei colleghi</p>
+    <h2>Anche chi ha esperienza sceglie da chi imparare.</h2>
+    <p class="lead" style="color:rgba(255,255,255,.8)">Dal 2018 il dott. Armenti tiene corsi per medici sulle labbra. Vengono chirurghi, medici e odontoiatri, e guardano come lavora da vicino.</p>
+    <div class="colleghi-wrap">
+      <figure class="colleghi-foto">
+        <img src="img/nuove/corso-2022-dottore.jpg" alt="Il dott. Armenti tratta le labbra durante un corso, i medici intorno riprendono con il telefono" width="1125" height="1500" loading="lazy">
+        <figcaption class="nota">Un corso del dott. Armenti. I medici intorno riprendono ogni passaggio con il telefono.</figcaption>
+      </figure>
+      <div class="colleghi-video">
+        <div class="dato"><span class="n">15+</span><span class="l">anni da chirurgo plastico.<br>Ed è venuto a imparare le labbra da lui.</span></div>
+        <div class="video" style="--ar:16/9">
+          <video src="img/voci/chirurgo.mp4" poster="img/voci/chirurgo-poster.jpg" playsinline preload="none" width="1280" height="720"></video>
+          <button class="play" type="button" data-video="chirurgo">Perché un chirurgo plastico ha scelto lui<small>0:21</small></button>
+        </div>
+        <p class="citaz">«Volevo vedere alcune chicche che ovviamente puoi apprendere da persone che hanno grandi numeri come il dottore. […] Di alto livello, veramente.»</p>
+        <p class="nota">Un chirurgo plastico, specialista da più di 15 anni, a un corso del dott. Armenti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · i risultati -->
+<section id="risultati">
+  <div class="w">
+    <p class="kicker">I lavori del dott. Armenti</p>
+    <h2>Guarda la forma.<br>Ascolta chi l’ha scelto.</h2>
+
+      <figure class="caso grande">
+        <div class="confronto">
+          <img src="img/casi2/grande-prima.jpg" alt="Labbra di una paziente, di fronte, prima" width="900" height="562" loading="lazy">
+          <img class="dopo" src="img/casi2/grande-dopo.jpg" alt="Labbra di una paziente, di fronte, subito dopo" width="900" height="562" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando"><b>Prima e subito dopo, a fine seduta.</b> Il bordo del labbro di sopra è più disegnato, fino agli angoli.</figcaption>
+      </figure>
+    <div class="casi-griglia">
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/54-fronte-prima.jpg" alt="Labbra di una paziente, di fronte, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/54-fronte-dopo.jpg" alt="Labbra di una paziente, di fronte, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di fronte · prima e dopo</figcaption>
+      </figure>
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/49-fronte-prima.jpg" alt="Labbra di una paziente, di fronte, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/49-fronte-dopo.jpg" alt="Labbra di una paziente, di fronte, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di fronte · prima e dopo</figcaption>
+      </figure>
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/27-profilo-prima.jpg" alt="Labbra di una paziente, di profilo, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/27-profilo-dopo.jpg" alt="Labbra di una paziente, di profilo, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di profilo · prima e dopo</figcaption>
+      </figure>
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/40-profilo-prima.jpg" alt="Labbra di una paziente, di profilo, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/40-profilo-dopo.jpg" alt="Labbra di una paziente, di profilo, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di profilo · prima e dopo</figcaption>
+      </figure>
+    </div>
+    <div class="sfoglia" data-sfoglia>
+      <p class="sfoglia-titolo">Altri 4 casi</p>
+      <div class="sfoglia-pista">
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/63-fronte-prima.jpg" alt="Labbra di una paziente, di fronte, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/63-fronte-dopo.jpg" alt="Labbra di una paziente, di fronte, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di fronte · prima e subito dopo</figcaption>
+      </figure>
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/61-fronte-prima.jpg" alt="Labbra di una paziente, di fronte, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/61-fronte-dopo.jpg" alt="Labbra di una paziente, di fronte, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di fronte · prima e subito dopo</figcaption>
+      </figure>
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/62-fronte-prima.jpg" alt="Labbra di una paziente, di fronte, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/62-fronte-dopo.jpg" alt="Labbra di una paziente, di fronte, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di fronte · prima e subito dopo</figcaption>
+      </figure>
+      <figure class="caso">
+        <div class="confronto">
+          <img src="img/casi2/21-profilo-prima.jpg" alt="Labbra di una paziente, di profilo, prima" width="1080" height="675" loading="lazy">
+          <img class="dopo" src="img/casi2/21-profilo-dopo.jpg" alt="Labbra di una paziente, di profilo, subito dopo" width="1080" height="675" loading="lazy">
+          <span class="linea"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Sposta per confrontare prima e dopo">
+        </div>
+        <figcaption class="quando">Di profilo · prima e subito dopo</figcaption>
+      </figure>
+      </div>
+      <div class="sfoglia-nav">
+        <button type="button" data-dir="-1" aria-label="Caso precedente">‹</button>
+        <span class="sfoglia-pos" aria-live="polite">1 di 4</span>
+        <button type="button" data-dir="1" aria-label="Caso successivo">›</button>
+      </div>
+    </div>
+    <p class="nota" style="margin-top:14px">Tutte le foto sono scattate nella stessa seduta: il dopo è con il labbro appena trattato, lucido e un po’ gonfio.</p>
+
+    <div class="voci">
+      <div class="voce">
+        <div class="video" style="--ar:4/5">
+          <video src="img/voci/serena-genitori.mp4" poster="img/voci/serena-genitori.jpg" playsinline preload="none" width="576" height="720"><track kind="subtitles" srclang="it" label="Italiano" src="img/voci/serena-genitori.vtt" default></video>
+          <button class="play" type="button" data-video="serena">Serena: «non se ne sono accorti»<small>0:19</small></button>
+        </div>
+        <p class="citaz">«I miei genitori, il mio fidanzato, non si erano neanche accorti.»</p>
+        <p class="chi">Serena, paziente del dott. Armenti</p>
+      </div>
+      <div class="voce">
+        <div class="video" style="--ar:4/5">
+          <video src="img/voci/irene-impedirebbe.mp4" poster="img/voci/irene-impedirebbe.jpg" playsinline preload="none" width="576" height="720"><track kind="subtitles" srclang="it" label="Italiano" src="img/voci/irene-impedirebbe.vtt" default></video>
+          <button class="play" type="button" data-video="irene">Irene: quando il medico dice di aspettare<small>0:26</small></button>
+        </div>
+        <p class="citaz">«…in un momento in cui ancora non è necessario che io faccia il trattamento, lui […] me lo impedirebbe.»</p>
+        <p class="chi">Irene, paziente del dott. Armenti. Esperienze personali: ogni bocca è diversa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · il metodo -->
+<section class="salvia" id="metodo">
+  <div class="w">
+    <p class="kicker">Dentro il metodo LA VISION</p>
+    <h2>Prima si osserva.<br>Poi si progetta.</h2>
+    <div class="metodo-grid">
+      <div>
+        <div class="video" style="--ar:4/5">
+          <video src="img/voci/armenti-quanto-prodotto.mp4" poster="img/voci/armenti-quanto-prodotto.jpg" playsinline preload="none" width="576" height="720"><track kind="subtitles" srclang="it" label="Italiano" src="img/voci/armenti-quanto-prodotto.vtt" default></video>
+          <button class="play" type="button" data-video="armenti-quantita">Il dott. Armenti sulla quantità<small>0:56</small></button>
+        </div>
+        <p class="citaz scura">«Scordatevi il quantitativo, non serve.»</p>
+        <p class="chi-video">Dott. Andrea Armenti</p>
+      </div>
+      <div>
+        <ol class="passi">
+          <li><b>Analisi</b><span>Il viso, il profilo e le labbra mentre sorridi. Sei zone e tredici elementi, in un ordine scritto.</span></li>
+          <li><b>Valutazione</b><span>Quello che desideri, e com’è fatta la tua bocca. Se non ti serve, il medico te lo dice.</span></li>
+          <li><b>Piano</b><span>Se intervenire, dove e come, con la tecnica giusta per il tuo caso.</span></li>
+        </ol>
+        <p class="domanda">«Dottore, che tipo di forma faremo?»</p>
+        <p class="nota">È la domanda giusta, secondo il dott. Armenti. Non «una fiala o mezza fiala?».</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · lo studio -->
+<section id="studio">
+  <div class="w">
+    <p class="kicker">Studio scientifico pubblicato · 2026</p>
+    <h2>Il metodo.<br>I dati pubblicati.</h2>
+    <div class="studio-grid">
+      <a class="frontespizio" href="https://pubmed.ncbi.nlm.nih.gov/42384058/" target="_blank" rel="noopener" data-cta="studio">
+        <img src="img/studio-la-vision-p1.jpg" alt="Prima pagina dello studio LA VISION pubblicato su Aesthetic Plastic Surgery" loading="lazy">
+        <span><b>Aesthetic Plastic Surgery, 2026.</b> «LA VISION©: A Structured Approach to Lip Analysis and Aesthetic Treatment with Hyaluronic Acid Fillers», di Andrea F. Armenti. Leggilo su PubMed ↗</span>
+      </a>
+      <div>
+        <div class="numeri">
+          <div><span class="n">400</span><span class="l">persone nello studio</span></div>
+          <div><span class="n">1.039</span><span class="l">sedute analizzate, seguite per un anno</span></div>
+        </div>
+        <div class="zero">
+          <span class="n">0</span>
+          <div><b>complicanze gravi osservate nelle 1.039 sedute dello studio</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · face for life -->
+<section class="salvia" id="faceforlife">
+  <div class="w ffl-grid">
+    <div>
+      <p class="kicker">Face for Life · il progetto pro bono</p>
+      <h2>La cura, anche senza compenso.</h2>
+      <p class="lead">Con Face for Life il dott. Armenti ha offerto trattamenti gratuiti a persone con paralisi del nervo facciale o con la cicatrice della labiopalatoschisi: tossina botulinica per riequilibrare il viso, acido ialuronico per ridare forma al labbro.</p>
+      <p class="nota" style="margin-top:14px">Sono trattamenti diversi da quello estetico di questa pagina.</p>
+    </div>
+    <div class="video-con-frase">
+      <div class="video" style="--ar:6/7">
+        <video src="img/nuove/faceforlife.mp4" poster="img/nuove/faceforlife.jpg" playsinline preload="none" width="648" height="756"></video>
+        <button class="play" type="button" data-video="faceforlife">Il dott. Armenti racconta Face for Life<small>0:34</small></button>
+      </div>
+      <p class="citaz scura">«Eseguo dei trattamenti pro bono, cioè gratuiti, per chi soffre di due grandi patologie.»</p>
+      <p class="chi-video">Dott. Andrea Armenti</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06b · filler fatto altrove -->
+<section id="gia-fatto">
+  <div class="w ffl-grid">
+    <div>
+      <p class="kicker">Hai già fatto il filler altrove?</p>
+      <h2>Si parte da quello che c’è.</h2>
+      <p class="lead">Dillo quando ti chiamiamo: il medico prima valuta il filler che hai già, poi si decide cosa fare. Come si procede, e quanto costa, lo sai prima di fissare.</p>
+    </div>
+    <div class="video-con-frase">
+      <div class="video" style="--ar:4/5">
+        <video src="img/voci/maddalena-salvezza.mp4" poster="img/voci/maddalena-salvezza.jpg" playsinline preload="none" width="576" height="720"><track kind="subtitles" srclang="it" label="Italiano" src="img/voci/maddalena-salvezza.vtt" default></video>
+        <button class="play" type="button" data-video="maddalena">Maddalena, dopo un filler fatto altrove<small>0:31</small></button>
+      </div>
+      <p class="citaz scura">«Dovevo correggere un errore di un medico […] per me lui è stata la salvezza.»</p>
+      <p class="chi-video">Maddalena, paziente del dott. Armenti</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · medici e prezzo -->
+<section id="medici">
+  <div class="w">
+    <p class="kicker">A MedX · Roma</p>
+    <h2>Il medico che scegli.<br>Un percorso chiaro.</h2>
+    <div class="medici-grid">
+      <figure class="coppia">
+        <img src="img/nuove/medici-coppia.jpg" alt="Il dott. Andrea Armenti e la dott.ssa Beatrice Nardi" width="1200" height="960" loading="lazy">
+      </figure>
+      <div>
+        <div class="medico armenti">
+          <p class="ruolo">L’autore del metodo</p>
+          <h3>Andrea Armenti</h3>
+          <p>Chirurgo plastico. Autore del metodo LA VISION, lo insegna ai medici dal 2018. Iscritto all’Ordine dei Medici di Roma, n. 55492. Poche date a Roma.</p>
+          <p class="prezzo solo-prezzo"><span class="n">400 € + IVA</span><span>filler labbra · metodo LA VISION</span></p>
+        </div>
+        <div class="medico nardi">
+          <p class="ruolo">Medico MedX · formata con lui</p>
+          <h3>Beatrice Nardi</h3>
+          <p>Medico chirurgo, laureata alla Sapienza di Roma. Formata dal dott. Armenti sul metodo LA VISION.</p>
+          <p class="prezzo solo-prezzo"><span class="n">249 €</span><span>filler labbra · metodo LA VISION · PRX incluso · prezzo finito</span></p>
+          <p class="prx">Con la dott.ssa Nardi è compreso anche <b>PRX T-33</b>: un trattamento per la pelle del viso, senza aghi.</p>
+          <div class="nardi-foto">
+            <img src="img/nuove/nardi-prima-dopo.jpg" alt="Una paziente della dott.ssa Nardi, prima e dopo" width="900" height="1125" loading="lazy">
+            <img src="img/nuove/nardi-dopo.jpg" alt="La stessa paziente dopo il trattamento, sul lettino" width="900" height="1125" loading="lazy">
+          </div>
+          <p class="nota" style="margin-top:8px">Una sua paziente, prima e subito dopo. Il labbro di sopra è più pieno fino ai lati.</p>
+        </div>
+        <p class="nota solo-senza" style="margin-top:8px">Il filler labbra con il metodo LA VISION ha un prezzo unico, tutto compreso: te lo diciamo al telefono, insieme alle date di tutti e due.</p>
+      </div>
+    </div>
+
+    <div class="clinica">
+      <img src="img/nuove/clinica-reception.jpg" alt="La reception di MedX Clinic" width="1086" height="1448" loading="lazy">
+      <img src="img/nuove/clinica-ingresso.jpg" alt="L'ingresso di MedX Clinic" width="1086" height="1448" loading="lazy">
+    </div>
+    <p class="nota" style="margin-top:8px">MedX Clinic, Corso Francia 221, Roma. Qui si fa la visita e il trattamento.</p>
+
+    <div class="medici-grid" style="margin-top:40px">
+      <ol class="percorso">
+        <li><b>Lasci il numero</b></li>
+        <li><b>Ti chiamiamo con le date</b></li>
+        <li><b>Il trattamento a MedX, Corso Francia 221</b></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · i dubbi -->
+<section class="salvia" id="dubbi">
+  <div class="w dubbi-wrap">
+    <div>
+      <p class="kicker">Prima di scegliere</p>
+      <h2>I tuoi dubbi.<br>Uno alla volta.</h2>
+    </div>
+    <div class="dubbi">
+      <details>
+        <summary>Si vedrà che ho fatto il filler?</summary>
+        <div class="r">
+          <p>Il lavoro si decide guardando profilo, bordo, lati e sorriso: le labbra sembrano rifatte quando la tecnica non rispetta la forma di quella bocca. Serena: «i miei genitori, il mio fidanzato, non si erano neanche accorti».</p>
+          <p>Nei primi giorni, con il gonfiore, si nota di più.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Ho paura di non riconoscermi.</summary>
+        <div class="r"><p>Si parte dalla tua forma, non da un modello. Maddalena: «semplicemente te la cura, ti cura la tua stessa forma». E se non ti serve, il medico te lo dice.</p></div>
+      </details>
+      <details>
+        <summary>Quanto costa e cosa comprende?</summary>
+        <div class="r">
+          <p class="solo-prezzo">Il filler labbra con il metodo LA VISION ha un prezzo unico: 249 € con la dott.ssa Nardi, PRX compreso, prezzo finito; 400 € + IVA con il dott. Armenti.</p>
+          <p class="solo-senza">Il filler labbra con il metodo LA VISION ha un prezzo unico, tutto compreso, che ti diciamo al telefono prima di fissare.</p>
+          <p>Se il medico ti dice che non serve, non paghi niente.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Quanto gonfierò? Fa male?</summary>
+        <div class="r">
+          <p>Nello studio il gonfiore è stato annotato nel 13,1% delle sedute e i lividi nel 9%: di solito nei primi 2-3 giorni, e per lo più passano da soli. Il risultato si giudica a gonfiore passato.</p>
+          <p>Il metodo usa un ago molto sottile e piccole dosi per ogni punto. Serena lo temeva: «ero parecchio intimorita all’inizio, però poi è andato tutto liscio come l’olio». Se e come usare un anestetico te lo dice il medico.</p>
+          <div class="video" style="--ar:4/5">
+            <video src="img/voci/jessica-gonfiore.mp4" poster="img/voci/jessica-gonfiore.jpg" playsinline preload="none" width="576" height="720"><track kind="subtitles" srclang="it" label="Italiano" src="img/voci/jessica-gonfiore.vtt" default></video>
+            <button class="play" type="button" data-video="jessica">Jessica, sui giorni del gonfiore<small>0:23</small></button>
+          </div>
+          <p class="citaz scura piccola">«…soprattutto all’inizio hai le labbra magari un po’ più pronunciate per il gonfiore.»</p>
+          <p class="chi-video">Jessica, paziente del dott. Armenti</p>
+        </div>
+      </details>
+      <details>
+        <summary>E se il risultato non mi piace?</summary>
+        <div class="r"><p>Si giudica quando il gonfiore è passato. Se qualcosa non ti torna, chiamaci o scrivici: cosa si può fare, e quanto costa, lo sai prima.</p></div>
+      </details>
+      <details>
+        <summary>Dovrò rifarlo? Diventeranno sempre più grandi?</summary>
+        <div class="r"><p>Un numero valido per tutte non c’è. A MedX se e quando servono i mantenimenti dipende dal tuo caso: lo decidi con il medico.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · contatto -->
+<section class="verde" id="contatto">
+  <div class="w contatto-grid">
+    <div>
+      <p class="kicker">Informati. Poi scegli.</p>
+      <h2>Le disponibilità.<br>E lo studio, da leggere con calma.</h2>
+      <p style="color:rgba(255,255,255,.85)">Lascia i tuoi contatti: ti chiamiamo con le date libere dei due medici e ti mandiamo per email la pubblicazione originale, con una sintesi in italiano curata da MedX.</p>
+      <div class="ricevi" style="margin-top:24px">
+        <p class="kicker" style="margin:0">Cosa ricevi</p>
+        <p class="t">Lo studio LA VISION, spiegato.</p>
+        <ol>
+          <li><span>01</span>La pubblicazione originale</li>
+          <li><span>02</span>Una sintesi in italiano: metodo, dati e limiti</li>
+        </ol>
+      </div>
+    </div>
+    <div id="modulo-box">
+      <form id="modulo" novalidate>
+        <div class="campo"><label for="mNome">Nome</label><input id="mNome" name="nome" type="text" autocomplete="given-name" required></div>
+        <div class="campo"><label for="mEmail">Email <small>· per ricevere i documenti</small></label><input id="mEmail" name="email" type="email" autocomplete="email" required></div>
+        <div class="campo"><label for="mTel">Telefono <small>· per le disponibilità</small></label><input id="mTel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <fieldset class="campo">
+          <legend>Hai già fatto il filler labbra?</legend>
+          <div class="scelte">
+            <label><input type="radio" name="gia" value="No"><span>No</span></label>
+            <label><input type="radio" name="gia" value="Sì, mi piace"><span>Sì, mi piace</span></label>
+            <label><input type="radio" name="gia" value="Sì, non mi piace"><span>Sì, non mi piace</span></label>
+          </div>
+        </fieldset>
+        <label class="spunta"><input type="checkbox" id="mPrivacy" required><span>Ho letto l’<a href="informativa.html" target="_blank" rel="noopener">informativa privacy</a> e accetto di essere ricontattata da MedX Clinic.</span></label>
+        <p class="err" id="mErr" role="alert"></p>
+        <button class="btn" type="submit" data-cta="modulo">Richiedi disponibilità e documenti</button>
+        <p class="sotto">Ti chiamiamo noi con le date libere dei due medici.</p>
+      </form>
+      <a class="wa" href="https://wa.me/393520269390" target="_blank" rel="noopener" data-cta="whatsapp">Preferisci scrivere? WhatsApp 352 026 9390</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="piede">
+  <div class="w">
+    <img src="img/assets/logo-medx-scuro.png" alt="MedX Clinic" width="144" height="18">
+    <p>MedX Clinic · Corso Francia 221, Roma · 352 026 9390</p>
+    <p>Le foto e le testimonianze sono esperienze individuali: ogni bocca è diversa. Le informazioni non sostituiscono la visita medica.</p>
+    <p><a href="informativa.html">Informativa privacy</a></p>
+  </div>
+</footer>
+
+<div class="fisso" id="fisso"><a class="btn" href="#contatto" data-cta="fisso">Scopri medici e disponibilità</a></div>
+
+<script>
+(function(){
+  var H=document.documentElement, q=new URLSearchParams(location.search);
+  var anteprima=/^(localhost|127\.0\.0\.1)$/.test(location.hostname)||q.has('prova')||!/medxclinic\.it$/.test(location.hostname);
+  // versione con o senza prezzo
+  var v=q.get('prezzo'); if(v==='si'||v==='no') H.dataset.prezzo=v;
+  if(anteprima){
+    var b=document.createElement('div'); b.className='prova'; b.setAttribute('aria-label','Anteprima: versione');
+    b.innerHTML='<button type="button" data-p="si">Con prezzo</button><button type="button" data-p="no">Senza prezzo</button>';
+    document.body.appendChild(b);
+    var seg=function(){b.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.p===H.dataset.prezzo)})};
+    b.addEventListener('click',function(e){var p=e.target.dataset.p;if(p){H.dataset.prezzo=p;seg()}}); seg();
+  }
+  // confronti prima/dopo
+  document.querySelectorAll('.confronto input').forEach(function(r){
+    r.addEventListener('input',function(){r.parentNode.style.setProperty('--x',r.value+'%')});
+  });
+  document.querySelectorAll('[data-caso]').forEach(function(c){
+    c.querySelectorAll('[data-vista]').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        c.querySelectorAll('[data-vista]').forEach(function(x){x.setAttribute('aria-pressed',x===btn)});
+        c.querySelectorAll('[data-vista-box]').forEach(function(x){x.hidden=x.dataset.vistaBox!==btn.dataset.vista});
+      });
+    });
+  });
+  // casi uno alla volta: frecce e contatore (il dito sulla foto sposta il cursore prima/dopo)
+  document.querySelectorAll('[data-sfoglia]').forEach(function(sf){
+    var pista=sf.querySelector('.sfoglia-pista'), casi=pista.children, pos=sf.querySelector('.sfoglia-pos'), bt=sf.querySelectorAll('[data-dir]'), i=0;
+    var guida=null, attesa=null;
+    function vai(n){i=Math.max(0,Math.min(casi.length-1,n));clearTimeout(guida);guida=setTimeout(function(){guida=null},700);pista.scrollTo({left:casi[i].offsetLeft-pista.offsetLeft,behavior:'smooth'});agg()}
+    function agg(){pos.textContent=(i+1)+' di '+casi.length;bt[0].disabled=i===0;bt[1].disabled=i===casi.length-1}
+    bt.forEach(function(b){b.addEventListener('click',function(){vai(i+(+b.dataset.dir))})});
+    // mentre la freccia sta portando al caso, lo scorrimento non cambia il contatore; a mano si aggiorna a fine gesto
+    pista.addEventListener('scroll',function(){if(guida)return;clearTimeout(attesa);attesa=setTimeout(function(){var n=Math.round(pista.scrollLeft/pista.clientWidth);if(n!==i){i=n;agg()}},90)},{passive:true});
+    agg();
+  });
+  // video: al tocco parte con la voce; uno alla volta
+  document.querySelectorAll('.video .play').forEach(function(p){
+    p.addEventListener('click',function(){
+      var box=p.parentNode, vid=box.querySelector('video');
+      document.querySelectorAll('.video video').forEach(function(o){if(o!==vid)o.pause()});
+      box.classList.add('va'); vid.controls=true; vid.muted=false; vid.play();
+    });
+  });
+  // bottone fisso: dopo l'apertura, non sopra il modulo
+  var f=document.getElementById('fisso'), ct=document.getElementById('contatto'), ap=document.querySelector('.apertura');
+  function aggiorna(){var dopo=ap.getBoundingClientRect().bottom<0, r=ct.getBoundingClientRect(), dentro=r.top<innerHeight&&r.bottom>0; f.classList.toggle('su',dopo&&!dentro)}
+  addEventListener('scroll',aggiorna,{passive:true}); aggiorna();
+  // ── Active, pixel, UTM ─────────────────────────────────────────────
+  var AC={url:'https://medxclinic.activehosted.com/proc.php',form:4,
+    campi:{privacy:16,utm_source:17,utm_medium:18,utm_campaign:19,utm_term:20,utm_content:21,versione:36,gia_fatto:37,consenso:38}};
+  var PIXEL='1339633081554791', SESS=(Math.random().toString(36).slice(2)+Date.now().toString(36)).slice(0,20);
+  var UTM={};
+  (function(){var k=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'],t=false;
+    k.forEach(function(x){var v=q.get(x);if(v){UTM[x]=v.slice(0,120);t=true}});
+    try{if(t)sessionStorage.setItem('mx-labbra-utm',JSON.stringify(UTM));else UTM=JSON.parse(sessionStorage.getItem('mx-labbra-utm')||'{}');
+      var fb=q.get('fbclid');if(fb)sessionStorage.setItem('mx-fbclid',fb.slice(0,500)+'|'+Date.now())}catch(e){}})();
+  var CONS='mx-consenso-pixel',acceso=false,fatti={},attesa=[];
+  function scelta(){try{return localStorage.getItem(CONS)}catch(e){return null}}
+  function accendi(){if(acceso||scelta()!=='si'||anteprima)return;acceso=true;
+    try{var fb=(sessionStorage.getItem('mx-fbclid')||'').split('|');if(fb[0])document.cookie='_fbc=fb.1.'+(fb[1]||Date.now())+'.'+encodeURIComponent(fb[0])+';path=/;max-age=7776000;SameSite=Lax'}catch(e){}
+    (function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init',PIXEL);fbq('track','PageView');attesa.forEach(px);attesa=[]}
+  function px(n){if(fatti[n])return;if(!acceso){if(scelta()===null&&attesa.indexOf(n)<0)attesa.push(n);return}fatti[n]=1;fbq('track',n)}
+  var ban=null;
+  function banner(){if(ban)return;ban=document.createElement('div');ban.className='consenso';ban.setAttribute('role','region');ban.setAttribute('aria-label','Cookie');
+    ban.innerHTML='<p>Un cookie di Meta ci dice se le inserzioni funzionano. <b>Non riceve quello che scrivi.</b> <a href="informativa.html#cookie">Dettagli</a></p><div class="consenso-bott"><button type="button" data-c="no">Rifiuto</button><button type="button" data-c="si">Accetto</button></div>';
+    ban.addEventListener('click',function(e){var c=e.target.dataset&&e.target.dataset.c;if(!c)return;try{localStorage.setItem(CONS,c)}catch(x){}ban.remove();ban=null;if(c==='si')accendi();else attesa=[]});
+    document.body.appendChild(ban)}
+  if(scelta()==='si')accendi();
+  else if(scelta()===null&&!anteprima){var tb,dopo=function(){removeEventListener('scroll',dopo);clearTimeout(tb);banner()};tb=setTimeout(dopo,4000);addEventListener('scroll',dopo,{passive:true})}
+  document.addEventListener('click',function(e){var a=e.target.closest('[data-cta="whatsapp"]');if(a)px('Contact')});
+  if('IntersectionObserver' in window&&ct){var io=new IntersectionObserver(function(v){if(v[0].isIntersecting){px('ViewContent');io.disconnect()}});io.observe(ct)}
+  // ── modulo: in anteprima non invia niente ──────────────────────────
+  var m=document.getElementById('modulo'), err=document.getElementById('mErr');
+  function tel(v){v=v.replace(/[\s.\-()\/]/g,'');if(/^00/.test(v))v='+'+v.slice(2);if(/^3\d{8,9}$/.test(v))v='+39'+v;return v}
+  m.addEventListener('submit',function(e){
+    e.preventDefault(); var x=[], bt=m.querySelector('button[type=submit]');
+    if(bt.disabled) return;
+    if(!m.nome.value.trim()) x.push('il nome');
+    if(!/^\S+@\S+\.\S+$/.test(m.email.value.trim())) x.push('un’email valida');
+    if(m.telefono.value.replace(/\D/g,'').length<9) x.push('un numero di telefono');
+    if(!document.getElementById('mPrivacy').checked) x.push('la spunta sull’informativa');
+    if(x.length){err.textContent='Manca '+x.join(', ')+'.';return}
+    err.textContent='';
+    var nome=m.nome.value.trim(), g=m.querySelector('input[name=gia]:checked'), ora=new Date().toISOString().slice(0,16).replace('T',' ');
+    var d=new URLSearchParams(); ['u','f'].forEach(function(k){d.set(k,AC.form)}); d.set('s','');d.set('c','0');d.set('m','0');d.set('act','sub');d.set('v','2');d.set('or',SESS);
+    d.set('fullname',nome); d.set('email',m.email.value.trim()); d.set('phone',tel(m.telefono.value.trim()));
+    function campo(k,v){if(v)d.set('field['+AC.campi[k]+']',v)}
+    campo('privacy','Sì · pagina labbra · '+ora); campo('consenso','Sì · '+ora);
+    campo('versione',H.dataset.prezzo==='si'?'con prezzo':'senza prezzo'); campo('gia_fatto',g?g.value:'');
+    for(var u in UTM) campo(u,UTM[u]);
+    function fatto(){px('Lead');
+      document.getElementById('modulo-box').innerHTML='<div class="grazie"><h3>Grazie, '+nome.replace(/[<>&"]/g,'')+'.</h3><p>Ti chiamiamo con le date libere dei due medici. '+(anteprima?'<br><br><b>Anteprima: niente è stato inviato.</b>':'')+'</p></div>'}
+    if(anteprima){console.log('[anteprima] Active modulo '+AC.form+': '+d.toString());fatto();return}
+    bt.disabled=true; var t=bt.textContent; bt.textContent='Invio in corso…';
+    fetch(AC.url,{method:'POST',mode:'no-cors',body:d,credentials:'omit',referrerPolicy:'strict-origin'}).then(fatto,function(){
+      bt.disabled=false; bt.textContent=t; err.textContent='Non è partito: controlla la connessione e riprova, oppure scrivici su WhatsApp al 352 026 9390.'});
+  });
+})();
+</script>
+</body>
+</html>
