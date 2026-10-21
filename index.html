@@ -783,7 +783,7 @@ try{localStorage.setItem(K,JSON.stringify({v:v,t:Date.now()}))}catch(e){}H.datas
   addEventListener('scroll',aggiorna,{passive:true}); aggiorna();
   // ── Active, pixel, UTM ─────────────────────────────────────────────
   var AC={url:'https://medxclinic.activehosted.com/proc.php',form:4,
-    campi:{privacy:16,utm_source:17,utm_medium:18,utm_campaign:19,utm_term:20,utm_content:21,versione:36,gia_fatto:37,consenso:38}};
+    campi:{privacy:16,utm_source:17,utm_medium:18,utm_campaign:19,utm_term:20,utm_content:21,versione:36,gia_fatto:37,consenso:38,fbclid:7,fbp:8,fbc:9}};
   var PIXEL='1339633081554791', SESS=(Math.random().toString(36).slice(2)+Date.now().toString(36)).slice(0,20);
   var UTM={};
   (function(){var k=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'],t=false;
@@ -825,6 +825,9 @@ try{localStorage.setItem(K,JSON.stringify({v:v,t:Date.now()}))}catch(e){}H.datas
     campo('privacy','Sì · pagina labbra · '+ora); campo('consenso','Sì · '+ora);
     campo('versione',H.dataset.prezzo==='si'?'con prezzo':'senza prezzo'); campo('gia_fatto',g?g.value:'');
     for(var u in UTM) campo(u,UTM[u]);
+    // Identificativo del clic Meta (solo se ha accettato il pixel): serve a Meta per riconoscere chi prenota.
+    if(scelta()==='si'){try{var fq=(sessionStorage.getItem('mx-fbclid')||'').split('|'),ck=function(n){var r=document.cookie.match(new RegExp('(?:^|; )'+n+'=([^;]+)'));return r?decodeURIComponent(r[1]):''};
+      if(fq[0]){campo('fbclid',fq[0]);campo('fbc','fb.1.'+(fq[1]||Date.now())+'.'+fq[0])}else campo('fbc',ck('_fbc'));campo('fbp',ck('_fbp'))}catch(e){}}
     function fatto(){px('Lead');
       document.getElementById('modulo-box').innerHTML='<div class="grazie"><h3>Grazie, '+nome.replace(/[<>&"]/g,'')+'.</h3><p>Ti chiamiamo con le date libere dei due medici. '+(anteprima?'<br><br><b>Anteprima: niente è stato inviato.</b>':'')+'</p></div>'}
     if(anteprima){console.log('[anteprima] Active modulo '+AC.form+': '+d.toString());fatto();return}
